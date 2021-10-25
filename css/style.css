@@ -67,6 +67,11 @@ h3 {
     text-transform: uppercase;
 }
 
+.container {
+    width: 1278px;
+    margin: 0 auto;
+  }
+
 /* header */
 
 .header {
