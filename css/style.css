@@ -80,7 +80,7 @@ h3 {
 
 .menu-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
@@ -105,14 +105,16 @@ h3 {
 /* main */
 
 .promo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     background-image: url(../img/promo-ski.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.promo-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .promo-h1 {
@@ -127,7 +129,7 @@ h3 {
 }
 
 .promo-text {
-    padding: 389px 190px 260px 190px;
+    /* padding: 389px 190px 260px 190px; */
     font-size: 32px;
     color: #fff;
     text-shadow: 1px 1px 2px #060d10;
@@ -135,15 +137,22 @@ h3 {
 }
 
 .advantages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     background: rgba(102, 209, 255, .1);
 }
 
-.card-container {
+.advantages-wrap{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 33%;
 }
 
 .card-text {
@@ -159,11 +168,13 @@ h3 {
 }
 
 .order {
+    background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, .1) 43.86%);
+}
+
+.order-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, .1) 43.86%);
 }
 
 .order 
@@ -182,7 +193,7 @@ h3 {
 
 .photos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* footer */
@@ -191,23 +202,28 @@ h3 {
     background-color: #060d10;
 }
 
-.footer-text {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 167%;
-    color: #fff;
-
-}
-
-.footer-container {
+.footer-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.social {
+.social-wrap {
     display: flex;
-    /* justify-content: flex-start; */
     list-style-type: none;
     flex-grow: 2;
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 167%;
+    color: #fff;
+}
+
+.footer-textcopy{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
 }
