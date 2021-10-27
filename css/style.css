@@ -49,8 +49,9 @@
 /* COMMON  */
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -140,7 +141,9 @@ h3 {
 
 .promo-text {
     padding-bottom: 260px;
+    width: 83%;
     font-size: 32px;
+    line-height: 39px;
     color: #fff;
     text-shadow: 1px 1px 2px #060d10;
     text-align: center;
@@ -170,7 +173,7 @@ h3 {
 
 .card{
     padding: 0 15px 70px 15px;
-    width: 30%; 
+    width: 33%; 
 }
 
 .card-text {
@@ -226,7 +229,7 @@ h3 {
 /* footer */
 
 .footer {
-    padding: 38px 0;
+    padding: 34px 0;
     background-color: #060d10;
 }
 
